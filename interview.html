@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview in Progress</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="interview-container">
+        <h1>Question: Tell us about yourself and why you're the best candidate for this position.</h1>
+        
+        <div class="interview-content">
+            <div class="video-feed">
+                <video id="interviewVideo" width="500" height="375" autoplay muted></video>
+                <img id="moustacheOverlay" src="moustache.png" style="position:absolute; display:none; pointer-events:none; z-index:10;">
+                <canvas id="analysisCanvas" style="display:none;"></canvas>
+            </div>
+            
+            <div class="analysis-feed">
+                <h2>Real-time Analysis</h2>
+                <div id="analysisResults">
+                    <p><strong>Gender:</strong> <span id="gender">Detecting...</span></p>
+                    <p><strong>Age:</strong> <span id="age">Detecting...</span></p>
+                    <p><strong>Emotion:</strong> <span id="emotion">Detecting...</span></p>
+                    <p><strong>Smiling:</strong> <span id="smiling">Detecting...</span></p>
+                    <p><strong>Time Elapsed:</strong> <span id="timer">0:00</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="interview-box">
+        <p><strong>Vibes:</strong> <span id="sentiment">Listening...</span></p>
+        </div>
+        <button id="endInterviewBtn">End Interview</button>
+    </div>
+
+    <script src="interview.js"></script>
+</body>
+</html>

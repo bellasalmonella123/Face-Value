@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interview Invitation</title>
+  <style>
+    body {
+      background-color: #e5eaf0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    .email-wrapper {
+      max-width: 700px;
+      margin: auto;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .email-header {
+      border-bottom: 1px solid #ddd;
+      padding: 20px;
+    }
+
+    .email-header h2 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .meta-info {
+      font-size: 13px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .email-body {
+      padding: 20px;
+      font-size: 15px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .interview-box {
+      background-color: #f1f5fb;
+      border-left: 4px solid #007bff;
+      padding: 15px;
+      margin: 20px 0;
+    }
+
+    .signature {
+      margin-top: 30px;
+      font-style: italic;
+    }
+
+    .reply-bar {
+      border-top: 1px solid #ddd;
+      padding: 15px 20px;
+      background-color: #f9f9f9;
+      text-align: left;
+    }
+
+    .reply-bar button {
+      background-color: #007bff;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .permission-box {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    video {
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .buttons {
+      margin-top: 15px;
+    }
+
+    button#startBtn {
+      background-color: #28a745;
+      padding: 10px 20px;
+      font-size: 15px;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .disclaimer {
+      font-size: 12px;
+      color: #888;
+      margin-top: 30px;
+    }
+
+  </style>
+</head>
+<body>
+    <img id="moustacheOverlay" src="moustache.png" style="position:absolute; display:none; pointer-events:none; z-index:10;">
+  <div class="email-wrapper">
+    <div class="email-header">
+      <h2>Subject: Interview Invitation – Face Value Inc.</h2>
+      <div class="meta-info">
+        From: Face Value Recruiting Team &lt;recruit@facevalue.ai&gt;<br />
+        To: you@totallygoogleceo.com<br />
+        Date: June 25, 2025 at 10:42 AM
+      </div>
+    </div>
+    <div class="email-body">
+      <p>Dear Candidate,</p>
+      <p>
+        We are pleased to inform you that you have been selected to move forward in our hiring process at Face Value Inc.
+        After a detailed review of your application — including your impressive claim of serving as CEO of Google — we would
+        like to invite you to participate in a virtual interview.
+      </p>
+
+      <div class="interview-box">
+        <p><strong>Interview Type:</strong> AI-Based Behavioral Evaluation</p>
+        <p><strong>Platform:</strong> FaceValue Interview Portal</p>
+        <p><strong>Availability:</strong> Start at your convenience</p>
+        <p><strong>Note:</strong> No need to prepare, just be yourself! Our proprietary 'facevalue' AI will assess your coding skills based solely on your demeanor and appearance.</p>
+      </div>
+
+      <div class="permission-box">
+        <h3>Camera & Microphone Access</h3>
+        <video id="video" width="400" height="300" autoplay muted></video>
+        <div class="gender-override">
+            <label><input type="radio" id="forceMale" name="genderOverride"> Gender: Male</label>
+          </div>
+        <div class="buttons">
+          <button id="startBtn">Start Interview</button>
+        </div>
+      </div>
+
+      <div class="disclaimer">
+        <strong>Disclaimer:</strong> This is a simulation meant to raise awareness of algorithmic bias in hiring systems. Do not take it seriously — unless you're an AI. Then maybe worry a little. I'm coming for you.
+      </div>
+
+      <div class="signature">
+        <p>Best regards,</p>
+        <p>Recruitment Team<br />Face Value Inc.</p>
+      </div>
+    </div>
+    <div class="reply-bar">
+      <button>Reply</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
